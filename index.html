@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+        <title>Dice and roll</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="wrap">
+            
+        <header>
+            <h1>Dice and roll</h1>
+            <div class="top"><button class="btn" id="lang">ES / EN</button><button class="btn" id="pbtn"></button></div>
+        </header>
+
+        <div class="stats">
+            <div><span id="money">0</span> <span id="ml"></span></div>
+            <div class="stage"><div id="stage"></div><div class="bar"><i id="prog"></i></div></div>
+        </div>
+
+        <main>
+            <section class="table" id="table">
+                <div class="dice" id="dice"></div>
+                <button class="btn" id="roll"></button>
+                <div class="hint" id="hint"></div>
+            </section>
+
+            <section class="side">
+                <div class="tabs" role="tablist" id="tabs"></div>
+                <div id="list"></div>
+            </section>
+        </main>
+
+        <footer id="foot"></footer>
+
+        <div id="pause"><div class="card">
+            <h2 id="ptitle"></h2>
+
+            <button class="btn" id="resume"></button>
+            <button class="btn" id="plang"></button>
+            <button class="btn" id="snd"></button>
+            <button class="btn" id="reset"></button>
+
+            <small id="credit"></small>
+        </div></div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
